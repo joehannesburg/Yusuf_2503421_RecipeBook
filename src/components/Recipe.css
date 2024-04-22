@@ -1,0 +1,122 @@
+/* Styles for the grid container */
+.recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  /* Styles for each recipe block */
+  .food {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styles for the recipe name */
+  .name {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  /* Styles for the recipe image */
+  .food img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  /* Styles for the recipe description */
+  .food p {
+    margin-bottom: 10px;
+  }
+  
+  /* Styles for the favorite button */
+  .food button {
+    background-color: #ff5900;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* Styles for the favorite button on hover */
+  .food button:hover {
+    background-color: #45a049;
+  }
+
+  /* Search Bar */
+.search-bar {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 300px;
+    margin-left: 10px;
+  }
+  
+  .search-bar:focus {
+    outline: none;
+    border-color: #6c63ff;
+    box-shadow: 0 0 5px rgba(108, 99, 255, 0.3);
+  }
+  
+  /* Show Favorites Checkbox */
+  .show-favourites {
+    margin-left: 10px;
+  }
+  
+  /* Filter Checkboxes */
+  .filters {
+    margin-top: 16px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .filters label {
+    margin-bottom: 8px;
+    margin-right: 16px;
+    font-size: 14px;
+    color: #333;
+    display: flex;
+    align-items: center;
+  }
+  
+  .filters input[type="checkbox"] {
+    margin-right: 8px;
+  }
+  
+  /* Checkbox Styles */
+  input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    vertical-align: middle;
+  }
+  
+  input[type="checkbox"]:checked {
+    background-color: #6c63ff;
+    border-color: #6c63ff;
+  }
+  
+  input[type="checkbox"]:checked::after {
+    content: "\2714";
+    color: #fff;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }

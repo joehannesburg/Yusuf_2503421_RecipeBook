@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import RecipeList from "./components/RecipeList";
+import { recipeData } from "./Data";
+import './components/Recipe.css';
+import "./App.css"
 
-function App() {
+// Main App component that holds all the other components and data and showcases the Recipe Book data on web app
+function App () {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main>
+      <h1 className="heading">Recipe Book</h1>
+      <RecipeList recipes={recipeData} />
+    </main>
   );
-}
+};
 
 export default App;
